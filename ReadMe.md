@@ -2,6 +2,9 @@
 A Sublime Text 4 syntax highlighting package for the <a href="https://kdl.dev"><b>KDL</b> cuddly document language</a>
 </p>
 
+> [!NOTE]
+> **Revisit trigger for this `bat`/`syntect` compatibility branch:** `KDL2.sublime-syntax` is a reduced grammar for `bat` builds using syntect 5.3 or earlier. When [syntect PR #687](https://github.com/trishume/syntect/pull/687) merges and `bat` updates to a syntect revision containing it, retest the preserved `KDL2.sublime-syntax.source` and `KDL2⁄-.sublime-syntax.source` as active `.sublime-syntax` files. Restore the full grammar only if `bat cache --build` succeeds and a representative nested KDL2 fixture—with hashed raw strings—finishes with balanced child scopes.
+
 ## Introduction
 
 This package adds support for the `KDL` document language, both versions 1 and 2 (for files with `.kdl` extension, but also with `.kdl1`/`.kdl2` if you want to force a specific version)
