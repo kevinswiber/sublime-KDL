@@ -6,7 +6,7 @@ scope: text.kdl.2
 first_line_match: '/-[[:blank:]]*kdl-version[[:blank:]]+2[[:blank:]]*$'
 version: 2
 
-# bat 0.25 uses syntect 5.2, which cannot run the full Sublime grammar reliably.
+# bat builds using syntect 5.3 or earlier cannot run the full Sublime grammar reliably.
 # The preserved full grammar is in KDL2.sublime-syntax.source.
 
 variables:
